@@ -1,0 +1,116 @@
+<!-- OrbitJS Config -->
+<!-- 
+
+    datatypes:
+       
+        boolean": true/ false
+        number": a number with optional decimal value e.g. 56.56
+        integer": a whole number e.g. 56
+        string": text in quotation marks 'example'
+        colour":   rgb(0-255, 0-255, 0-255)
+                or hexadecimal colour e.g. #FFFFFF
+                or named colour e.g. white, red, blue
+                must be presented as a string
+
+
+
+ -->
+
+{
+    <!-- MainNodeName (string): name of centre node -->
+    "MainNodeName": "Home",
+
+    <!-- DrawOrbits (boolean): display orbit radius circles -->
+    "DrawOrbits": true,
+    
+    <!-- DrawOrbitsOnMouseOver (boolean): display orbit radius circles when node is moused over -->
+    "DrawOrbitsOnMouseOver": false,
+
+    <!-- DrawSpokes (boolean): display lines connecting nodes to their parent -->
+    "DrawSpokes": true,
+    
+    <!-- DrawSpokesOnMouseOver (boolean): display lines connecting nodes to their parent when node is moused over -->
+    "DrawSpokesOnMouseOver": false,
+    
+    <!-- MouseOverTimeRate (number): rate that the spokes and circle borders grow when moused over -->
+    "MouseOverTimeRate": 5,
+    
+    <!-- RadiusGrowthRate (number): rate that a node's radius grows when not minimized (when it or its parent is selected) -->
+    "RadiusGrowthRate": 100,
+    
+    <!-- ZoomApproachRate (number): rate that the zoom is changed when a node of a different level is selected -->
+    "ZoomApproachRate": 2,
+    
+    <!-- OrbitalRadius (integer): default distance that nodes can orbit from their parent  -->
+    "OrbitalRadius": 100,
+    
+    <!-- GrabbedTickerRate (number): rate that spokes and lines grow when a node is grabbed/ spun  -->
+    "GrabbedTickerRate": 3,
+
+    <!-- GlobalOrbitSpeed (number): global/ default orbital speed of nodes  -->
+    "GlobalOrbitSpeed": 0.1,
+    
+    <!-- OrbitSpeedIncreasePerLevel (number): amount that the orbital speed multiplier is increased per level (starts at 1 for the Home node) -->
+    "OrbitSpeedIncreasePerLevel": 0.25,
+
+    <!-- SizeStepPerLevel (number): amount that node radius is divided by per level-->
+    "SizeStepPerLevel": 3,
+
+    <!-- MaximizedCircleRadius (integer): maximized radius of a node -->
+    "MaximizedCircleRadius": 50,
+    
+    <!-- MinimizedCircleRadius (integer): minimized radius of a node -->
+    "MinimizedCircleRadius": 15,
+
+    <!-- CamSpeed (number): speed that the camera jumps to a new node after being selected -->
+    "CamSpeed": 2,
+
+    <!-- PanelOpacityRate (number): rate that the pop-up panels fade into or out of view when opened or closed -->
+    "PanelOpacityRate": 6,
+    
+    "DrawShadows": true,
+    "ShadowWidth": 0.95,
+    "ShadowLength": 15,
+    "ShadowAlpha": 0.1,
+
+    <!-- VeryRecentScrollTime (number): time in milliseconds, time since last mouse wheeling, zoom to current level will be disabled for this duration -->
+    "VeryRecentScrollTime": 1000,
+    
+    <!-- RecentScrollTime (number): time in milliseconds, grace period, where zoom to current level will be slowed for the duration  -->
+    "RecentScrollTime": 10000,
+
+    <!-- BackgroundColourInner (colour): inner colour of the background gradient -->
+    "BackgroundColourInner": "rgb(190,190,190)",
+    
+    <!-- BackgroundColourOuter (colour): outer colour of the background gradient -->
+    "BackgroundColourOuter": "rgb(75,75,75)",
+    
+    <!-- BackgroundGradientSize (number): size of the gradient -->
+    "BackgroundGradientSize": 200,
+
+    <!-- CircleLineColour (colour): colour of the lines surrounding the nodes -->
+    "CircleLineColour": "#000",
+    
+    <!-- DefaultCircleColour (colour): default colour for nodes which do not have colours assigned to them -->
+    "DefaultCircleColour": "rgb(45,137,239)",
+    
+    <!-- CircleGradientAmount (number): gradient size of the circle, higher means more dark shadowing -->
+    "CircleGradientAmount": 5,
+
+    <!-- GrabberLineColourR/G/B (number): RGB values for the grabber lines, these appear when a node is grabbed and spun -->
+    "GrabberLineColourR": 255,
+    "GrabberLineColourG": 255,
+    "GrabberLineColourB": 255,
+
+    <!-- OrbitLineColourR/G/B (number): RGB values for the orbit radius lines -->
+    "OrbitLineColourR": 0,
+    "OrbitLineColourG": 0,
+    "OrbitLineColourB": 0,
+    
+    <!-- OrbitLineAlphaMult (number): multiplier to make the orbit lines appear more/ less faded -->
+    "OrbitLineAlphaMult": 0.7,
+    
+    <!-- OrbitLineAlphaLevels (number): the difference between a given node's height and the current node is used to determine the opacity of the orbit lines, the difference is divided by this number to get an alpha multiplier -->
+    "OrbitLineAlphaLevels": 10
+}
+<!-- Copyright Luke St Jack - lukestjack.com -->
